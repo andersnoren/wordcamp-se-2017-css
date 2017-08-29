@@ -4024,15 +4024,78 @@ footer .widget {
 }
 
 .subscribe-inner:before {
-	border-width: 4px;
-	margin: 10px;
+	border-width: 3px;
+	margin: 8px;
 }
 
 .subscribe-inner:after {
-	border-width: 4px;
+	border-width: 1px;
 	margin: 14px;
+}
+
+.subscribe-inner > * {
+	position: relative;
+	z-index: 10;
+}
+
+.subscribe h3 {
+	font-size: 28px;
+	letter-spacing: -0.02em;
+	margin: 0;
+}
+
+.subscribe p {
+	font-size: 15px;
+	line-height: 1.46;
+	margin: 17px 0 0;
+}
+
+.subscribe form {
+	margin: 25px 0 0 0;
+	position: relative;
+}
+
+.subscribe input[type="text"] {
+	border: none;
+	border-bottom: 2px solid #ddd;
+	color: #242424;
+	font-size: 14px;
+	font-weight: 500;
+	padding: 0 0 12px 0;
 }
 
 .social-area {
 	margin-top: 40px;
+}
+
+.patriotic-title {
+	display: flex;
+	text-align: center;
+}
+
+.patriotic-title:before,
+.patriotic-title:after {
+	content: "";
+	display: block;
+	border-bottom: 9px solid #F5C826;
+	border-top: 9px solid #2284D2;
+	width: 36px;
+}
+
+.patriotic-title span {
+	background: #fff;
+	padding: 0 20px;
+}
+
+.patriotic-title span.desktop {
+	display: none;
+}
+
+@media ( min-width: 48em ) {
+	.patriotic-title span.desktop {
+		display: inline;
+	}
+	.patriotic-title span.mobile {
+		display: none;
+	}
 }
