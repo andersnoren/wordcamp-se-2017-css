@@ -2901,7 +2901,8 @@ div.googlemaps iframe {
 	max-height: 8.75rem;
 }
 
-.wcorg-sponsor .wcorg-sponsor-description p,.wcorg-sponsor h3 {
+.wcorg-sponsor .wcorg-sponsor-description,
+.wcorg-sponsor h3 {
 	display: none;
 }
 
