@@ -4212,3 +4212,16 @@ footer .widget {
 		right: 14px;
 		top: 14px;
 }
+
+.social-links .fa {
+	align-items: center;
+	color: #848484;
+	display: flex;
+	font-size: 24px;
+	justify-content: center;
+	position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		top: 0;
+}
