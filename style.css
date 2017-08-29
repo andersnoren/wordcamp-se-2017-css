@@ -1650,9 +1650,9 @@ pre code {
 }
 
 .post {
-	margin-bottom: 1.5rem;
-	padding-bottom: 1.5rem;
 	border-bottom: 24px solid transparent;
+	margin-bottom: 2rem;
+	padding-bottom: 2rem;
 	position: relative;
 }
 
@@ -1677,6 +1677,10 @@ pre code {
 	background-size: auto 24px;
 	bottom: -24px;
 	height: 24px;
+}
+
+.post>*:last-child {
+	margin-bottom: 0;
 }
 
 .entry-content:after,.entry-content:before {
@@ -1731,7 +1735,6 @@ pre code {
 .entry-footer {
 	margin-bottom: 1.5rem;
 	font-size: 16px;
-	font-size: 1rem;
 	line-height: 1.5em;
 	color: #848484;
 }
