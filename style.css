@@ -1153,7 +1153,7 @@ pre code {
 	line-height: 1;
 	font-family: henriette, Georgia, serif;
 	font-weight: 500;
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 	color: #fff;
 }
 
@@ -1193,7 +1193,7 @@ pre code {
 	line-height: 1.25em;
 	font-family: aktiv-grotesk, Helvetica Neue, Helvetica, sans-serif;
 	font-weight: 400;
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
 	text-transform: none;
 	color: #fff;
 }
@@ -1745,6 +1745,12 @@ pre code {
 	margin-bottom: 1.5rem;
 }
 
+@media (min-width: 48em) {
+	.entry-meta {
+		margin-bottom: 2.5rem;
+	}
+}
+
 .entry-meta a {
 	color: #2284D2;
 	text-decoration: underline;
@@ -1760,6 +1766,24 @@ pre code {
 
 .entry-meta .published {
 	display: inline;
+}
+
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4 {
+	margin-top: 3rem;
+}
+
+@media(min-width:1024px) {
+
+	.entry-content > p:first-child > img.alignnone,
+	.entry-content > p:first-child > a > img.alignnone {
+		margin-left: -100px;
+		max-width: none;
+		width: 904px;
+	}
+	
 }
 
 .entry-footer {
