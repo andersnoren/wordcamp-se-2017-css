@@ -1621,18 +1621,18 @@ pre code {
 
 #primary {
 	text-align: left;
-	padding: 1.5rem 1rem;
+	padding: 2.5rem 1rem;
 }
 
 @media (min-width:37.5em) {
 	#primary {
-		padding: 3rem 2rem;
+		padding: 5rem 2rem;
 	}
 }
 
 @media (min-width:48em) {
 	#primary {
-		padding: 4.5rem 3rem;
+		padding: 6.25rem 3rem;
 	}
 }
 
@@ -1651,8 +1651,8 @@ pre code {
 
 .post {
 	border-bottom: 24px solid transparent;
-	margin-bottom: 2rem;
-	padding-bottom: 2rem;
+	margin-bottom: 3rem;
+	padding-bottom: 3rem;
 	position: relative;
 }
 
