@@ -2859,7 +2859,7 @@ div.googlemaps iframe {
 
 @media ( min-width: 48em ) {
 	.wcorg-sponsors>div+div {
-		margin-top: 4.5rem;
+		margin-top: 90px;
 	}
 }
 
@@ -2883,6 +2883,7 @@ div.googlemaps iframe {
 @media (min-width:48em) {
 	.wcorg-sponsors>div h2 {
 		border-top: none;
+		margin-bottom: 50px;
 		padding-top: 0;
 	}
 	
