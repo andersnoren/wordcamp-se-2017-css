@@ -4172,6 +4172,7 @@ footer .widget {
 	.patriotic-title span:before,
 	.patriotic-title span:after {
 		border-width: 11px;
+		margin-top: -11px;
 	}
 	
 	.patriotic-title span:before { left: -44px; }
