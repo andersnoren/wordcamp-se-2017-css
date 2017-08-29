@@ -4091,14 +4091,10 @@ footer .widget {
 		top: -10px;
 }
 
-@media ( min-width: 47em ) {
+@media ( min-width: 32em ) {
 
 	.subscribe-inner {
-		padding: 80px 100px;
-	}
-	
-	.subscribe h3 {
-		font-size: 38px;
+		padding: 60px 75px;
 	}
 	
 	.subscribe p {
@@ -4109,6 +4105,18 @@ footer .widget {
 	
 	.subscribe form {
 		margin-top: 30px;
+	}
+	
+}
+
+@media ( min-width: 47em ) {
+
+	.subscribe-inner {
+		padding: 80px 100px;
+	}
+	
+	.subscribe h3 {
+		font-size: 38px;
 	}
 	
 }
