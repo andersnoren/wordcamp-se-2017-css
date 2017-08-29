@@ -1510,21 +1510,16 @@ pre code {
 
 .sub-menu .menu-item {
 	text-transform: none;
-	font-weight: 400;
+	font-weight: 500;
 	font-family: aktiv-grotesk, Helvetica Neue, Helvetica, sans-serif;
 }
 
 @media (max-width:37.4375em) {
 	.sub-menu a {
-		padding-left: 2.5rem;
-		background-image: url('https://2017.europe.wordcamp.org/files/2017/01/decoration-bullet-color.png');
-		background-repeat: no-repeat;
-		background-size: 12px;
-		background-position: 1rem 50%;
-	}
-	
-	.sub-menu a.focus,.sub-menu a:focus,.sub-menu a:hover {
-		background-image: url('https://2017.europe.wordcamp.org/files/2017/01/decoration-bullet-dark.png');
+		background: url('https://2017.stockholm.wordcamp.org/files/2017/08/crown-yellow-mini.png') no-repeat 1rem 50%;
+		background-size: 12px auto;
+		padding: .8rem 1rem .8rem 2.5rem;
+		font-size: 16px;
 	}
 }
 
