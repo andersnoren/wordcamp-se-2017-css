@@ -1551,23 +1551,23 @@ pre code {
 
 @media (min-width:37.5em) {
 	.sub-menu {
-		position: absolute;
-		top: 100%;
-		left: -999em;
-		z-index: 310;
-		min-width: 16.25rem;
 		background-color: #1E76BC;
+		min-width: 16.25rem;
+		position: absolute;
+			left: -999em;
+			top: 100%;
+		z-index: 310;
 	}
 	
 	.sub-menu .menu-item {
-		border-top: 1px solid rgba( 0, 0, 0, 0.1 );
+		border-bottom: 1px solid rgba( 255, 255, 255, 0.1 );
 		margin: 0;
 		text-align: left;
 		width: 100%;
 	}
 	
 	.sub-menu a {
-		padding: .625rem 1rem;
+		padding: 1rem;
 		color: #fff;
 	}
 	
