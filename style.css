@@ -1653,20 +1653,20 @@ pre code {
 	margin-bottom: 1.5rem;
 	padding-bottom: 1.5rem;
 	border-bottom: 24px solid transparent;
+	position: relative;
 }
 
 .post:before,.post:after {
 	content: "";
 	display: block;
 	position: absolute;
-	bottom: 0;
 	left: 0;
 	right: 0;
 }
 
 .post:before {
 	background: #fff;
-	bottom: 8px;
+	bottom: -16px;
 	height: 7px;
 	border-bottom: 2px solid #ddd;
 	border-top: 2px solid #ddd;
@@ -1675,6 +1675,7 @@ pre code {
 .post:after {
 	background: url('https://2017.stockholm.wordcamp.org/files/2017/08/crown-gray.png') no-repeat center;
 	background-size: auto 24px;
+	bottom: -24px;
 	height: 24px;
 }
 
