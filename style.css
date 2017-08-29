@@ -3995,9 +3995,44 @@ footer .widget {
 
 .subscribe {
 	background: #2284D2;
+	padding: 94px 0;
 	width: 100%;
 }
 
-.subscribe-inner {
+.subscribe-inner,
+.social-area {
+	margin: 0 auto;
+	width: 90%;
+}
 
+.subscribe-inner {	
+	background: #fff;
+	padding: 40px;
+	position: relative;
+}
+
+.subscribe-inner:before,
+.subscribe-inner:after {
+	border: .1rem solid #ddd;
+	content: "";
+	display: block;
+	position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		top: 0;
+}
+
+.subscribe-inner:before {
+	border-width: 4px;
+	margin: 10px;
+}
+
+.subscribe-inner:after {
+	border-width: 4px;
+	margin: 14px;
+}
+
+.social-area {
+	margin-top: 40px;
 }
