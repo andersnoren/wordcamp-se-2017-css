@@ -1416,6 +1416,7 @@ pre code {
 @media (min-width:37.5em) {
 	.menu {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
 	}
 }
@@ -2752,8 +2753,12 @@ div.googlemaps iframe {
 }
 
 .wcorg-speaker {
-	border-top: 6px double #f5ebe0;
+	border-top: 2px solid #ddd;
 	padding: 1.5rem 0;
+}
+
+.wcorg-speaker > h2 {
+	margin: 0 0 .8rem 0;
 }
 
 .wcorg-speaker .wcorg-speaker-description:after,.wcorg-speaker .wcorg-speaker-description:before {
@@ -2768,6 +2773,10 @@ div.googlemaps iframe {
 .wcorg-speaker .avatar {
 	float: left;
 	margin: .5rem 1rem .5rem 0;
+}
+
+.wcorg-speaker-description .avatar + h3 {
+	margin-top: 0;
 }
 
 .wcorg-speaker p {
