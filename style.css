@@ -4218,6 +4218,7 @@ footer .widget {
 
 .social-links {
 	display: flex;
+	justify-content: center;
 }
 
 .social-links a {
