@@ -2857,6 +2857,12 @@ div.googlemaps iframe {
 	margin-top: 3rem;
 }
 
+@media ( min-width: 48em ) {
+	.wcorg-sponsors>div+div {
+		margin-top: 4.5rem;
+	}
+}
+
 .wcorg-sponsors>div h2 {
 	border-top: 2px solid #ddd;
 	color: #2284D2;
@@ -2912,12 +2918,12 @@ div.googlemaps iframe {
 	align-items: center;
 	display: flex;
 	justify-content: center;
-	margin: 0;
+	margin: 0 0 2rem 0;
 	padding: 0 .5rem;
 }
 
-.wcorg-sponsor + .wcorg-sponsor {
-	margin-top: 2rem;
+.wcorg-sponsor:last-child {
+	margin-bottom: 0;
 }
 
 .wcorg-sponsor img {
