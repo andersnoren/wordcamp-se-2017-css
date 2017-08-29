@@ -3995,10 +3995,10 @@ footer .widget {
 }
 
 .subscribe {
-	background: #2284D2;
+	background: transparent;
 	margin-bottom: 40px;
-	overflow: hidden;
 	padding: 94px 0;
+	position: relative;
 	width: 100%;
 }
 
@@ -4008,11 +4008,12 @@ footer .widget {
 	content: "";
 	display: block;
 	position: absolute;
-	left: 0;
-	right: 0;
 	bottom: 0;
+	left: -50vw;
+	right: 0;
 	top: 0;
 	transform: rotate(-5.625deg);
+	width: 200vw;
 }
 
 .subscribe-inner,
