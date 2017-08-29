@@ -4069,7 +4069,9 @@ footer .widget {
 }
 
 .patriotic-title {
+	align-items: center;
 	display: flex;
+	justify-content: center;
 	text-align: center;
 }
 
@@ -4079,12 +4081,34 @@ footer .widget {
 	display: block;
 	border-bottom: 9px solid #F5C826;
 	border-top: 9px solid #2284D2;
+	height: 18px;
 	width: 36px;
 }
 
 .patriotic-title span {
 	background: #fff;
 	padding: 0 20px;
+	position: relative;
+}
+
+.patriotic-title span:before,
+.patriotic-title span:after {
+	border: 9px solid transparent;
+	content: "";
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top: -9px;
+}
+
+.patriotic-title span:before {
+	border-right-color: transparent;
+	left: 0;
+}
+
+.patriotic-title span:after {
+	border-left-color: transparent;
+	right: 0;
 }
 
 .patriotic-title span.desktop {
