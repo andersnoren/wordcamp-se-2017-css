@@ -4096,7 +4096,7 @@ footer .widget {
 }
 
 .social-area {
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	max-width: 637px;
 }
 
@@ -4151,8 +4151,13 @@ footer .widget {
 
 @media ( min-width: 48em ) {
 
+	.social-area {
+		margin-bottom: 50px;
+	}
+
 	.patriotic-title {
 		font-size: 32px;
+		margin-bottom: 50px;
 	}
 
 	.patriotic-title span {
