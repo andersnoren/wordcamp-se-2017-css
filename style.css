@@ -2853,7 +2853,7 @@ div.googlemaps iframe {
 }
 
 .wcorg-sponsors>div+div {
-	margin-top: 2rem;
+	margin-top: 3rem;
 }
 
 .wcorg-sponsors>div h2 {
@@ -2913,7 +2913,7 @@ div.googlemaps iframe {
 }
 
 .wcorg-sponsor + .wcorg-sponsor {
-	margin-top: 1rem;
+	margin-top: 2rem;
 }
 
 .wcorg-sponsor img {
@@ -3416,22 +3416,20 @@ div.googlemaps iframe {
 	margin-right: auto;
 }
 
+.page-slug-sponsors .entry-header {
+	margin-bottom: 2.5rem;
+}
+
 .page-slug-sponsors .entry-title {
-	position: relative;
-	margin-bottom: 4rem;
-	padding-bottom: 4rem;
 	text-align: center;
 }
 
-.page-slug-sponsors .entry-title:before {
-	width: 10rem;
-	height: .125rem;
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	background-color: #c96;
-	content: "";
+@media ( min-width: 48em ) {
+	
+	.page-slug-sponsors .entry-header {
+		margin-bottom: 6.25rem;
+	}
+	
 }
 
 .page-slug-attendees #content {
