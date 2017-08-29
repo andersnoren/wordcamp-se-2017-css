@@ -3997,8 +3997,21 @@ footer .widget {
 .subscribe {
 	background: #2284D2;
 	margin-bottom: 40px;
+	overflow: hidden;
 	padding: 94px 0;
 	width: 100%;
+}
+
+.subscribe:before {
+	background: #2284D2 url( 'https://2017.stockholm.wordcamp.org/files/2017/08/crown-pattern.png' ) repeat top left;
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	transform: rotate(-5.625);
 }
 
 .subscribe-inner,
@@ -4227,6 +4240,11 @@ footer .widget {
 		left: 0;
 		right: 0;
 		top: 0;
+	transition: transform .3s ease-in-out;
+}
+
+.social-links a:hover .fa {
+	transform: scale(1.25) rotate(-5deg);
 }
 
 @media ( min-width: 47em ) {
