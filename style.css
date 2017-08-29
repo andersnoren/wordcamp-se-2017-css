@@ -2851,7 +2851,8 @@ div.googlemaps iframe {
 	border-top: 2px solid #ddd;
 	color: #2284D2;
 	font-size: 1em;
-	font-weight: 700;
+	font-weight: 500;
+	letter-spacing: .1em;
 	line-height: 1;
 	margin-top: 1.5rem;
 	margin-bottom: 1.5rem;
@@ -2901,8 +2902,15 @@ div.googlemaps iframe {
 	max-height: 8.75rem;
 }
 
-.wcorg-sponsor .wcorg-sponsor-description,
-.wcorg-sponsor h3 {
+.wcorg-sponsor .wcorg-sponsor-description p,
+.wcorg-sponsor .wcorg-sponsor-description ul,
+.wcorg-sponsor .wcorg-sponsor-description ol,
+.wcorg-sponsor h1,
+.wcorg-sponsor h2,
+.wcorg-sponsor h3,
+.wcorg-sponsor h4,
+.wcorg-sponsor h5,
+.wcorg-sponsor h6 {
 	display: none;
 }
 
