@@ -1036,10 +1036,10 @@ pre code {
 	cursor: pointer;
 	display: inline-block;
 	font-family: aktiv-grotesk, Helvetica Neue, Helvetica, sans-serif;
-	font-size: 15px;
+	font-size: 14px;
 	font-weight: 500;
 	line-height: 1.25;
-	padding: .75rem 1.4rem .8rem;
+	padding: .6rem 1.1rem .65rem;
 	position: relative;
 	text-align: center;
 	text-decoration: none;
@@ -1050,6 +1050,15 @@ pre code {
 	background-color: #2284D2;
 	color: #fff;
 	text-decoration: none;
+}
+
+@media ( min-width: 32em ) {
+
+	.button,button,input[type=button],input[type=reset],input[type=submit] {
+		font-size: 15px;
+		padding: .75rem 1.4rem .8rem;
+	}
+
 }
 
 
@@ -4089,7 +4098,7 @@ footer .widget {
 }
 
 .subscribe .button {
-	margin: 25px 0 0;
+	margin: 15px 0 0;
 }
 
 @media ( min-width: 32em ) {
@@ -4102,6 +4111,10 @@ footer .widget {
 		font-size: 20px;
 		line-height: 1.4;
 		margin-top: 16px;
+	}
+	
+	.subscribe .button {
+		margin: 25px 0 0;
 	}
 	
 }
@@ -4177,11 +4190,7 @@ footer .widget {
 	display: none;
 }
 
-@media ( min-width: 47em ) {
-
-	.social-area {
-		margin-bottom: 50px;
-	}
+@media ( min-width: 32em ) {
 
 	.patriotic-title {
 		font-size: 32px;
@@ -4210,6 +4219,15 @@ footer .widget {
 	
 	.patriotic-title span:before { left: -44px; }
 	.patriotic-title span:after { right: -44px; }
+
+}
+
+@media ( min-width: 47em ) {
+
+	.social-area {
+		margin-bottom: 50px;
+	}
+
 }
 
 .social-links {
