@@ -578,7 +578,6 @@ body {
 	font-family: aktiv-grotesk, Helvetica Neue, Helvetica, sans-serif;
 	color: #242424;
 	background: #fff;
-	hanging-punctuation: first;
 	font-feature-settings: liga;
 }
 
@@ -731,37 +730,24 @@ select {
 
 a {
 	color: #2284D2;
-	text-decoration: none;
+	text-decoration: underline;
 	transition: all .15s ease;
 }
 
 a:focus,a:hover {
-	color: #2284D2;
+	color: #1E76BC;
 	text-decoration: underline;
 }
 
 a:active {
-	color: #2284D2;
+	color: #1E76BC;
 	text-decoration: none;
 }
 
 p {
-	margin-top: 0;
-	margin-bottom: 1.5rem;
 	font-size: 1em;
-	line-height: 1.5625em;
-}
-
-@media (min-width:37.5em) {
-	p {
-		line-height: 1.5625em;
-	}
-}
-
-@media (min-width:47em) {
-	p {
-		line-height: 1.5625em;
-	}
+	line-height: 1.5;
+	margin: 0 0 1.5rem 0;
 }
 
 strong {
@@ -1734,6 +1720,7 @@ article.page>*:last-child {
 
 .entry-title {
 	font-size: 2.25em;
+	hanging-punctuation: first;
 	line-height: 1;
 	margin-bottom: .75rem;
 }
@@ -1781,6 +1768,10 @@ article.page>*:last-child {
 .entry-content h3,
 .entry-content h4 {
 	margin-top: 3rem;
+}
+
+.entry-content > *:first-child {
+	margin-top: 0;
 }
 
 @media(min-width:1024px) {
@@ -2753,12 +2744,13 @@ div.googlemaps iframe {
 }
 
 .wcorg-speaker {
-	border-top: 2px solid #ddd;
+	border-top: 2px solid #eee;
+	margin-top: 1.5rem;
 	padding: 1.5rem 0;
 }
 
 .wcorg-speaker > h2 {
-	margin: 0 0 .8rem 0;
+	margin: 0 0 1.4rem;
 }
 
 .wcorg-speaker .wcorg-speaker-description:after,.wcorg-speaker .wcorg-speaker-description:before {
@@ -2772,7 +2764,7 @@ div.googlemaps iframe {
 
 .wcorg-speaker .avatar {
 	float: left;
-	margin: .5rem 1rem .5rem 0;
+	margin: 0 1rem .5rem 0;
 }
 
 .wcorg-speaker-description .avatar + h3 {
@@ -4231,6 +4223,7 @@ footer .widget {
 .social-links a {
 	box-shadow: inset 8px 8px 0 #fff, inset -8px -8px 0 #fff, inset -11px -11px 0 #ddd, inset 11px 11px 0 #ddd;
 	display: block;
+	max-width: 33.3%;
 	position: relative;
 	width: 100%;
 }
