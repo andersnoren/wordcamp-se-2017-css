@@ -661,7 +661,7 @@ hr:after {
 	content: "";
 	display: block;
 	height: 24px;
-	margin-left: -12px;
+	margin-left: -26.5px;
 	position: absolute;
 		left: 50%;
 		top: 0;
@@ -2848,15 +2848,18 @@ div.googlemaps iframe {
 }
 
 .wcorg-sponsors>div h2 {
-	width: 100%;
+	border-top: 2px solid #ddd;
+	color: #2284D2;
+	font-size: 1em;
+	font-weight: 700;
+	line-height: 1;
 	margin-top: 1.5rem;
 	margin-bottom: 1.5rem;
 	padding-top: 1.5rem;
-	border-top: 1px solid #f5ebe0;
-	font-size: 1em;
-	line-height: 1.5625em;
-	text-align: center;
 	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
 	z-index: 100;
 }
 
@@ -2867,13 +2870,16 @@ div.googlemaps iframe {
 	}
 	
 	.wcorg-sponsors>div h2:after,.wcorg-sponsors>div h2:before {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		width: 100%;
-		transform: translateX(-50%);
-		border-top: 1px solid #f5ebe0;
+		background: #fff;
+		border-bottom: 2px solid #ddd;
+		border-top: 2px solid #ddd;
 		content: "";
+		height: 9px;
+		position: absolute;
+			left: 50%;
+			top: 50%;
+		transform: translateX(-50%);
+		width: 100%;
 		z-index: -1;
 	}
 	
