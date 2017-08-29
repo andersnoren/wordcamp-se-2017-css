@@ -1038,7 +1038,7 @@ pre code {
 	font-size: 15px;
 	font-weight: 500;
 	line-height: 1.25;
-	padding: 1rem 1.5rem;
+	padding: .7rem 1.4rem .8rem;
 	position: relative;
 	text-align: center;
 	text-decoration: none;
@@ -4070,7 +4070,7 @@ footer .widget {
 }
 
 .subscribe .button {
-	margin: 25px auto 0 auto;
+	margin: 25px 0 0;
 }
 
 @media ( min-width: 32em ) {
