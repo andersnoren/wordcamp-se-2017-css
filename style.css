@@ -1755,6 +1755,10 @@ article.page>*:last-child {
 	margin-bottom: 1.5rem;
 }
 
+.entry-header>*:last-child {
+	margin-bottom: 0;
+}
+
 @media (min-width: 48em) {
 	.entry-header {
 		margin-bottom: 2.5rem;
@@ -2786,9 +2790,6 @@ div.googlemaps iframe {
 	padding: 1.5rem 0;
 }
 
-.wcorg-speaker .wcorg-speaker-description {
-}
-
 .wcorg-speaker .wcorg-speaker-description:after,.wcorg-speaker .wcorg-speaker-description:before {
 	content: "";
 	display: table;
@@ -2851,14 +2852,18 @@ div.googlemaps iframe {
 	text-align: center;
 }
 
+.wcorg-sponsors>div+div {
+	margin-top: 2rem;
+}
+
 .wcorg-sponsors>div h2 {
 	border-top: 2px solid #ddd;
 	color: #2284D2;
 	font-size: 1em;
 	font-weight: 500;
-	letter-spacing: .075em;
+	letter-spacing: .05em;
 	line-height: 1;
-	margin-top: 1.5rem;
+	margin-top: 0;
 	margin-bottom: 1.5rem;
 	padding-top: 1.5rem;
 	position: relative;
@@ -2886,7 +2891,7 @@ div.googlemaps iframe {
 		border-top: 2px solid #ddd;
 		height: 8px;
 		left: 0;
-		margin-top: -4px;
+		margin-top: -6px;
 		top: 50%;
 		width: 100%;
 	}
@@ -2903,8 +2908,12 @@ div.googlemaps iframe {
 }
 
 .wcorg-sponsor {
-	margin-bottom: 0;
-	padding: .5rem;
+	margin: 0;
+	padding: 0 .5rem;
+}
+
+.wcorg-sponsor + .wcorg-sponsor {
+	margin-top: 1rem;
 }
 
 .wcorg-sponsor img {
@@ -3409,7 +3418,6 @@ div.googlemaps iframe {
 
 .page-slug-sponsors .entry-title {
 	position: relative;
-	margin-bottom: 2rem;
 	margin-bottom: 4rem;
 	padding-bottom: 4rem;
 	text-align: center;
