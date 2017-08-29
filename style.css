@@ -1134,11 +1134,11 @@ pre code {
 
 .site-title a {
 	display: block;
-	color: #e6aa50;
+	color: #fff;
 }
 
 .site-title a:active,.site-title a:focus,.site-title a:hover {
-	color: #c96;
+	color: #fff;
 	text-decoration: none;
 }
 
@@ -1170,13 +1170,12 @@ pre code {
 	background-repeat: no-repeat;
 	background-position: 50% 0;
 	background-size: fixed;
-	background-image: url('https://2017.europe.wordcamp.org/files/2017/01/header-wceu17-hero-mobile.jpg');
+	background-image: url('https://2017.stockholm.wordcamp.org/files/2017/07/header-alt.jpg');
 	transition: all .15s ease;
 }
 
 @media (min-width:48em) {
 	.site-header {
-		background-image: url('https://2017.europe.wordcamp.org/files/2017/01/header-wceu17-hero-desktop.jpg');
 		background-position: 50% 50%;
 		background-size: cover;
 	}
