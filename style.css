@@ -1643,6 +1643,16 @@ pre code {
 	display: none;
 }
 
+@media ( min-width: 48em ) {
+	#colophon {
+		padding: 60px 0;
+	}
+	
+	.site-info-generator {
+		font-size: 20px;
+	}
+}
+
 #primary {
 	text-align: left;
 	padding: 2.5rem 1rem;
@@ -1727,7 +1737,8 @@ pre code {
 	right: 0;
 }
 
-.post>*:last-child {
+article.post>*:last-child,
+article.page>*:last-child {
 	margin-bottom: 0;
 }
 
@@ -1838,9 +1849,7 @@ pre code {
 }
 
 .wcorg-organizers {
-	padding-bottom: 1.5rem;
-	margin-bottom: 1.5rem;
-	border-bottom: 6px double #f5ebe0;
+	margin-bottom: 3rem;
 }
 
 .wcorg-organizer {
@@ -1856,7 +1865,6 @@ pre code {
 	margin-bottom: 1rem;
 	font-size: 1.25em;
 	font-family: henriette, Georgia, serif;
-	letter-spacing: .1em;
 }
 
 .wcorg-organizer .wcorg-organizer-description {
