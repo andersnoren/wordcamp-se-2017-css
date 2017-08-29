@@ -2875,21 +2875,20 @@ div.googlemaps iframe {
 	}
 	
 	.wcorg-sponsors>div h2:after,.wcorg-sponsors>div h2:before {
-		background: #fff;
-		border-bottom: 2px solid #ddd;
-		border-top: 2px solid #ddd;
 		content: "";
-		height: 8px;
 		position: absolute;
-		transform: translateX(-50%);
-		width: 100%;
 		z-index: -1;
 	}
 	
 	.wcorg-sponsors>div h2:before {
-		left: 50%;
+		background: #fff;
+		border-bottom: 2px solid #ddd;
+		border-top: 2px solid #ddd;
+		height: 8px;
+		left: 0;
 		top: 50%;
 		margin-top: -4px;
+		width: 100%;
 	}
 	
 	.wcorg-sponsors>div h2:after {
