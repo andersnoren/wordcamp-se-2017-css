@@ -595,34 +595,30 @@ body {
 
 ::-moz-selection {
 	color: #fff;
-	background-color: #e6aa50;
+	background-color: #2284D2;
 }
 
 ::selection {
 	color: #fff;
-	background-color: #e6aa50;
+	background-color: #2284D2;
 }
 
 h1,h2,h3,h4 {
+	color: #242424;
+	letter-spacing: -.025em;
 	margin-bottom: 1.5rem;
 	margin-top: 0;
 	font-family: henriette, Georgia, serif;
-	font-weight: 700;
+	font-weight: 500;
 	line-height: 1;
-	text-transform: uppercase;
 }
 
 h1 {
 	font-size: 2.44141em;
-	color: #c96;
 }
 
 h2 {
 	font-size: 1.95312em;
-}
-
-h2,h3 {
-	color: rgba(29,36,42,.9);
 }
 
 h3 {
@@ -631,15 +627,40 @@ h3 {
 
 h4 {
 	font-size: 1.25em;
-	color: rgba(29,36,42,.9);
-	letter-spacing: .025em;
 }
 
 hr {
+	height: 24px;
 	margin: 1.5rem 0;
 	padding: 0;
+	position: relative;
 	border: 0;
-	border-top: 1px solid #e8e9ea;
+}
+
+hr:before {
+	background: #fff;
+	border-bottom: 2px solid #ddd;
+	border-top: 2px solid #ddd;
+	content: "";
+	display: block;
+	position: absolute;
+		bottom: 8px;
+		left: 0;
+		right: 0;
+		top: 9px;
+}
+
+hr:after {
+	background: url('https://2017.stockholm.wordcamp.org/files/2017/08/crown-gray.png') no-repeat center;
+	background-size: auto 24px;
+	content: "";
+	display: block;
+	height: 24px;
+	margin-left: -12px;
+	position: absolute;
+		left: 50%;
+		top: 0;
+	width: 53px;
 }
 
 fieldset {
@@ -1148,10 +1169,17 @@ pre code {
 	height: 100px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 1rem;
+	margin-bottom: 1.5rem;
 	background: url('https://2017.stockholm.wordcamp.org/files/2017/08/wc-stockholm-logo.png') no-repeat center;
 	background-size: contain;
 	content: "";
+}
+
+@media (min-width:48em) {
+	.site-title a:before {
+		height: 180px;
+		width: 180px;
+	}
 }
 
 .site-description {
@@ -1168,17 +1196,10 @@ pre code {
 .site-header {
 	position: relative;
 	background-repeat: no-repeat;
-	background-position: 50% 0;
-	background-size: fixed;
+	background-position: center;
+	background-size: cover;
 	background-image: url('https://2017.stockholm.wordcamp.org/files/2017/07/header-alt.jpg');
 	transition: all .15s ease;
-}
-
-@media (min-width:48em) {
-	.site-header {
-		background-position: 50% 50%;
-		background-size: cover;
-	}
 }
 
 .site-header:before {
@@ -1310,12 +1331,14 @@ pre code {
 }
 
 .menu-toggle,.menu-toggle.focus,.menu-toggle:active,.menu-toggle:focus,.menu-toggle:hover {
-	color: #e6aa50;
-	background-color: rgba(45,40,45,.9);
+	color: #fff;
+	background-color: #2284D2;
 }
 
 .menu-toggle:before {
-	font-size: 16px;
+	font-family: henriette, Georgia, serif;
+	font-size: 18px;
+	font-weight: 500;
 	line-height: 24px;
 	content: "Menu";
 }
@@ -1330,12 +1353,12 @@ pre code {
 	top: -.125rem;
 	border: .375rem solid transparent;
 	margin-left: .5rem;
-	border-top-color: #e6aa50;
+	border-top-color: #fff;
 	content: "";
 }
 
 .menu-toggle[aria-expanded=true] {
-	color: #c96;
+	color: #fff;
 }
 
 .menu-toggle[aria-expanded=true]:after {
@@ -1360,7 +1383,7 @@ pre code {
 	left: 0;
 	right: 0;
 	height: .125rem;
-	background-color: #e6aa50;
+	background-color: #F5C826;
 	content: "";
 }
 
@@ -1686,7 +1709,12 @@ pre code {
 }
 
 .entry-title a:active,.entry-title a:focus,.entry-title a:hover {
+	color: #242424;
 	text-decoration: none;
+}
+
+.entry-title a:hover {
+	text-decoration: underline;
 }
 
 .entry-meta {
@@ -1694,11 +1722,12 @@ pre code {
 }
 
 .entry-meta a {
-	color: #614787;
+	color: #2284D2;
+	text-decoration: underline;
 }
 
 .entry-meta a:active,.entry-meta a:focus,.entry-meta a:hover {
-	color: #57407a;
+	color: #2284D2;
 }
 
 .entry-meta .updated {
@@ -1714,7 +1743,7 @@ pre code {
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5em;
-	color: rgba(29,36,42,.6);
+	color: #848484;
 }
 
 .entry-footer>:after {
@@ -1726,11 +1755,12 @@ pre code {
 }
 
 .entry-footer a {
-	color: #614787;
+	color: #848484;
 }
 
 .entry-footer a:active,.entry-footer a:focus,.entry-footer a:hover {
-	color: #57407a;
+	color: #848484;
+	text-decoration: underline;
 }
 
 .wcorg-organizers {
