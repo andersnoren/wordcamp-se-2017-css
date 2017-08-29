@@ -1672,16 +1672,24 @@ pre code {
 	content: "";
 	display: block;
 	position: absolute;
-	left: 0;
-	right: 0;
+		
 }
 
 .post:before {
-	background: #fff;
-	bottom: -16px;
-	height: 7px;
 	border-bottom: 2px solid #ddd;
 	border-top: 2px solid #ddd;
+	bottom: -18px;
+	height: 7px;
+	left: 50%;
+	margin-left: -45vw;
+	width: 90vw;
+}
+
+@media ( min-width: 1364px ) {
+	.post:before {
+		margin-left: -620px;
+		width: 1240px;
+	}
 }
 
 .post:after {
@@ -1689,6 +1697,8 @@ pre code {
 	background-size: auto 24px;
 	bottom: -24px;
 	height: 24px;
+	left: 0;
+	right: 0;
 }
 
 .post>*:last-child {
