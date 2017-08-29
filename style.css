@@ -1589,7 +1589,7 @@ pre code {
 
 #colophon {
 	margin: 0 auto;
-	padding: 30px 0;
+	padding: 0 0 30px;
 	text-align: center;
 }
 
@@ -1611,7 +1611,7 @@ pre code {
 
 @media ( min-width: 48em ) {
 	#colophon {
-		padding: 60px 0;
+		padding: 0 0 60px 0;
 	}
 	
 	.site-info-generator {
@@ -4062,10 +4062,17 @@ footer .widget {
 
 .subscribe input[type="email"] {
 	border: none;
+	box-shadow: none;
 	color: #242424;
 	font-size: 14px;
 	font-weight: 500;
 	padding: 0 0 12px 0;
+}
+
+.subscribe input[type="submit"] {
+	position: absolute;
+		right: 0;
+		top: -10px;
 }
 
 @media ( min-width: 48em ) {
@@ -4159,30 +4166,26 @@ footer .widget {
 }
 
 .social-links a {
+	box-shadow: inset 8px 8px 0 #fff, inset -8px -8px 0 #fff, inset -11px -11px 0 #ddd, inset 11px 11px 0 #ddd;
 	display: block;
-	height: 100px;
 	position: relative;
 	width: 100%;
 }
 
-.social-links a:before,
+.social-links a:before {
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+	width: 100%;
+}
+
 .social-links a:after {
-	border: .1rem solid #ddd;
+	border: 1px solid #ddd;
 	content: "";
 	display: block;
 	position: absolute;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		top: 0;
-}
-
-.social-links a:before {
-	border-width: 3px;
-	margin: 8px;
-}
-
-.social-links a:after {
-	border-width: 1px;
-	margin: 14px;
+		bottom: 14px;
+		left: 14px;
+		right: 14px;
+		top: 14px;
 }
