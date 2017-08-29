@@ -1539,7 +1539,8 @@ pre code {
 	}
 	
 	.menu-item a.focus, .menu-item a:active, .menu-item a:focus, .menu-item a:hover {
-		background-color: rgba( 0, 0, 0, .1 );
+		background-color: transparent;
+		text-decoration: underline;
 	}
 	
 }
