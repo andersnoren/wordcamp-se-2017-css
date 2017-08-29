@@ -578,6 +578,7 @@ body {
 	font-family: aktiv-grotesk, Helvetica Neue, Helvetica, sans-serif;
 	color: #242424;
 	background: #fff;
+	hanging-punctuation: first;
 	font-feature-settings: liga;
 }
 
@@ -1218,15 +1219,23 @@ pre code {
 	transition: all .15s ease;
 }
 
-.site-header .custom-header:before {
-	background-image: linear-gradient(31deg, #2082D0 0%, #F7CC39 100%);
+.site-header .custom-header:before,
+.site-header .custom-header:after {
 	content: "";
-	opacity: 0.25;
 	position: absolute;
 		bottom: 0;
 		left: 0;
 		right: 0;
 		top: 0;
+}
+
+.site-header .custom-header:before {
+	background: rgba( 0, 0, 0, 0.25 );
+}
+
+.site-header .custom-header:after {
+	background-image: linear-gradient(31deg, #2082D0 0%, #F7CC39 100%);
+	opacity: 0.55;
 }
 
 .home .site-header .site-branding:after,.home .site-header .site-branding:before {
@@ -1414,6 +1423,10 @@ pre code {
 }
 
 @media (max-width:37.4375em) {
+
+	.menu {
+		border-top: 1px solid rgba( 0, 0, 0, 0.1 );
+	}
 	
 	.main-navigation.toggled-on .menu {
 		display: block;
@@ -1421,7 +1434,6 @@ pre code {
 }
 
 .menu {
-	border-top: 1px solid rgba( 0, 0, 0, 0.1 );
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -1501,7 +1513,7 @@ pre code {
 
 .current-menu-item>a {
 	color: rgba(29,36,42,.9);
-	background-color: #e6aa50;
+	background-color: #1E76BC;
 }
 
 .menu-item-has-children {
@@ -1732,6 +1744,16 @@ pre code {
 	clear: both;
 }
 
+.entry-header {
+	margin-bottom: 1.5rem;
+}
+
+@media (min-width: 48em) {
+	.entry-header {
+		margin-bottom: 2.5rem;
+	}
+}
+
 .entry-title {
 	font-size: 2.25em;
 	line-height: 1;
@@ -1757,16 +1779,6 @@ pre code {
 
 .entry-title a:hover {
 	text-decoration: underline;
-}
-
-.entry-meta {
-	margin-bottom: 1.5rem;
-}
-
-@media (min-width: 48em) {
-	.entry-meta {
-		margin-bottom: 2.5rem;
-	}
 }
 
 .entry-meta a {
@@ -1797,6 +1809,7 @@ pre code {
 
 	.entry-content > p:first-child > img.alignnone,
 	.entry-content > p:first-child > a > img.alignnone {
+		margin-bottom: 40px;
 		margin-left: -100px;
 		max-width: none;
 		width: 904px;
