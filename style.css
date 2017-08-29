@@ -1118,6 +1118,7 @@ pre code {
 	overflow: hidden;
 	padding: 2.5rem 1rem;
 	text-align: center;
+	z-index: 10;
 }
 
 @media (min-width:37.5em) {
@@ -2942,45 +2943,24 @@ div.googlemaps iframe {
 	transition: all .15s ease;
 }
 
-.wcorg-sponsor a:active img,.wcorg-sponsor a:focus img,.wcorg-sponsor a:hover img {
-	filter: grayscale(100%);
-	opacity: .75;
-}
-
 @media (min-width:48em) {
-	.wcorg-sponsor {
-		padding: 1rem;
-	}
-	
 	.wcorg-sponsor img {
 		max-height: 12.5rem;
 	}
 }
 
-.wcorg-sponsor-level-administrator,.wcorg-sponsor-level-event-after-party,.wcorg-sponsor-level-event-speakers-dinner,.wcorg-sponsor-level-super-admin {
-}
-
-.wcorg-sponsor-level-administrator:after,.wcorg-sponsor-level-administrator:before,.wcorg-sponsor-level-event-after-party:after,.wcorg-sponsor-level-event-after-party:before,.wcorg-sponsor-level-event-speakers-dinner:after,.wcorg-sponsor-level-event-speakers-dinner:before,.wcorg-sponsor-level-super-admin:after,.wcorg-sponsor-level-super-admin:before {
-	content: "";
-	display: table;
-}
-
-.wcorg-sponsor-level-administrator:after,.wcorg-sponsor-level-event-after-party:after,.wcorg-sponsor-level-event-speakers-dinner:after,.wcorg-sponsor-level-super-admin:after {
-	clear: both;
-}
-
-.wcorg-sponsor-level-administrator .wcorg-sponsor,.wcorg-sponsor-level-event-after-party .wcorg-sponsor,.wcorg-sponsor-level-event-speakers-dinner .wcorg-sponsor,.wcorg-sponsor-level-super-admin .wcorg-sponsor {
+.wcorg-sponsors > div > .wcorg-sponsor {
 	width: 100%;
 }
 
 @media (min-width:37.5em) {
-	.wcorg-sponsor-level-administrator .wcorg-sponsor,.wcorg-sponsor-level-event-after-party .wcorg-sponsor,.wcorg-sponsor-level-event-speakers-dinner .wcorg-sponsor,.wcorg-sponsor-level-super-admin .wcorg-sponsor {
+	.wcorg-sponsors > div > .wcorg-sponsor {
 		width: 50%;
 	}
 }
 
 @media (min-width:48em) {
-	.wcorg-sponsor-level-administrator .wcorg-sponsor,.wcorg-sponsor-level-event-after-party .wcorg-sponsor,.wcorg-sponsor-level-event-speakers-dinner .wcorg-sponsor,.wcorg-sponsor-level-super-admin .wcorg-sponsor {
+	.wcorg-sponsors > div > .wcorg-sponsor {
 		width: 33.33333%;
 	}
 }
@@ -2988,13 +2968,10 @@ div.googlemaps iframe {
 .wcorg-sponsor-level-author,.wcorg-sponsor-level-editor,.wcorg-sponsor-level-speakers-dinner {
 }
 
-.wcorg-sponsor-level-author:after,.wcorg-sponsor-level-author:before,.wcorg-sponsor-level-editor:after,.wcorg-sponsor-level-editor:before,.wcorg-sponsor-level-speakers-dinner:after,.wcorg-sponsor-level-speakers-dinner:before {
+.wcorg-sponsors>div:after,.wcorg-sponsors>div:before {
+	clear: both;
 	content: "";
 	display: table;
-}
-
-.wcorg-sponsor-level-author:after,.wcorg-sponsor-level-editor:after,.wcorg-sponsor-level-speakers-dinner:after {
-	clear: both;
 }
 
 .wcorg-sponsor-level-author .wcorg-sponsor,.wcorg-sponsor-level-editor .wcorg-sponsor,.wcorg-sponsor-level-speakers-dinner .wcorg-sponsor {
