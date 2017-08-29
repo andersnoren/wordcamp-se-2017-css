@@ -609,12 +609,12 @@ body * {
 
 h1,h2,h3,h4 {
 	color: #242424;
-	letter-spacing: -.025em;
-	margin-bottom: 1.5rem;
-	margin-top: 0;
 	font-family: henriette, Georgia, serif;
 	font-weight: 500;
-	line-height: 1;
+	letter-spacing: -.025em;
+	line-height: 1.15;
+	margin-bottom: 1.5rem;
+	margin-top: 0;
 }
 
 h1 {
@@ -749,7 +749,6 @@ p {
 	margin-bottom: 1.5rem;
 	font-size: 1em;
 	line-height: 1.5625em;
-	color: rgba(29,36,42,.75);
 }
 
 @media (min-width:37.5em) {
@@ -1406,6 +1405,7 @@ pre code {
 }
 
 .menu {
+	border-top: 1px solid rgba( 0, 0, 0, 0.1 );
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -1460,7 +1460,8 @@ pre code {
 .menu-item a {
 	display: block;
 	color: #fff;
-	padding: .5rem 1rem;
+	font-size: 18px;
+	padding: 1rem;
 	text-decoration: none;
 	transition: all .1s ease;
 }
@@ -1651,19 +1652,30 @@ pre code {
 .post {
 	margin-bottom: 1.5rem;
 	padding-bottom: 1.5rem;
-	border-bottom: 6px double #f5ebe0;
+	border-bottom: 24px solid transparent;
 }
 
-.post:after,.post:before {
+.post:before,.post:after {
 	content: "";
-	display: table;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.post:before {
+	background: #fff;
+	bottom: 8px;
+	height: 7px;
+	border-bottom: 2px solid #ddd;
+	border-top: 2px solid #ddd;
 }
 
 .post:after {
-	clear: both;
-}
-
-.entry-content {
+	background: url('https://2017.stockholm.wordcamp.org/files/2017/08/crown-gray.png') no-repeat center;
+	background-size: auto 24px;
+	height: 24px;
 }
 
 .entry-content:after,.entry-content:before {
