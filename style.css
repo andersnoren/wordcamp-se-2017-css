@@ -2892,11 +2892,10 @@ div.googlemaps iframe {
 	}
 	
 	.wcorg-sponsors>div h2:after {
-		border-color: #fff;
 		bottom: 0;
 		top: 0;
 		left: 50%;
-		margin-left: -8rem;
+		transform: translate(-50%);
 		width: 16em;
 		z-index: -1;
 	}
