@@ -1472,6 +1472,7 @@ pre code {
 
 @media (min-width:48em) {
 	.menu-item a {
+		font-size: 20px;
 		padding: 1rem 1.5rem;
 	}
 }
@@ -1497,14 +1498,14 @@ pre code {
 	}
 	
 	.menu-item-has-children>a:after {
-		position: relative;
-		top: -.125rem;
 		display: inline-block;
 		border: .375rem solid transparent;
-		margin-left: .5rem;
-		vertical-align: middle;
-		border-top-color: #e6aa50;
+		border-top-color: #fff;
 		content: "";
+		margin-left: .5rem;
+		position: relative;
+		top: 2px;
+		vertical-align: middle;
 	}
 	
 	.menu-item-has-children>a .dropdown-toggle {
@@ -1560,8 +1561,6 @@ pre code {
 	
 	.sub-menu .menu-item {
 		border-top: 1px solid rgba( 0, 0, 0, 0.1 );
-		font-size: 16px;
-		font-weight: 500;
 		margin: 0;
 		text-align: left;
 		width: 100%;
@@ -1570,6 +1569,11 @@ pre code {
 	.sub-menu a {
 		padding: .625rem 1rem;
 		color: #fff;
+	}
+	
+	.sub-menu .menu-item a {
+		font-size: 16px;
+		font-weight: 500;
 	}
 }
 
