@@ -4004,6 +4004,7 @@ footer .widget {
 
 .subscribe:before {
 	background: #2284D2 url( 'https://2017.stockholm.wordcamp.org/files/2017/08/crown-pattern.png' ) repeat top left;
+	background-size: 120px auto;
 	content: "";
 	display: block;
 	position: absolute;
@@ -4011,7 +4012,7 @@ footer .widget {
 	right: 0;
 	bottom: 0;
 	top: 0;
-	transform: rotate(-5.625);
+	transform: rotate(-5.625deg);
 }
 
 .subscribe-inner,
