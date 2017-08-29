@@ -1512,12 +1512,8 @@ pre code {
 }
 
 .current-menu-item>a {
-	color: rgba(29,36,42,.9);
 	background-color: #1E76BC;
-}
-
-.menu-item-has-children {
-	background-color: rgba(45,40,45,.6);
+	color: #fff;
 }
 
 .menu-item-has-children .dropdown-toggle {
