@@ -3996,6 +3996,7 @@ footer .widget {
 
 .subscribe {
 	background: #2284D2;
+	margin-bottom: 40px;
 	padding: 94px 0;
 	width: 100%;
 }
@@ -4008,6 +4009,7 @@ footer .widget {
 
 .subscribe-inner {	
 	background: #fff;
+	max-width: 600px;
 	padding: 40px;
 	position: relative;
 }
@@ -4048,25 +4050,44 @@ footer .widget {
 .subscribe p {
 	font-size: 15px;
 	line-height: 1.46;
-	margin: 17px 0 0;
+	margin: 17px auto 0 auto;
+	max-width: 400px;
 }
 
 .subscribe form {
+	border-bottom: 2px solid #ddd;
 	margin: 25px 0 0 0;
 	position: relative;
 }
 
-.subscribe input[type="text"] {
+.subscribe input[type="email"] {
 	border: none;
-	border-bottom: 2px solid #ddd;
 	color: #242424;
 	font-size: 14px;
 	font-weight: 500;
 	padding: 0 0 12px 0;
 }
 
+@media ( min-width: 48em ) {
+	
+	.subscribe h3 {
+		font-size: 38px;
+	}
+	
+	.subscribe p {
+		font-size: 20px;
+		line-height: 1.4;
+		margin-top: 16px;
+	}
+	
+	.subscribe form {
+		margin-top: 30px;
+	}
+	
+}
+
 .social-area {
-	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 .patriotic-title {
@@ -4140,6 +4161,7 @@ footer .widget {
 .social-links a {
 	display: block;
 	height: 100px;
+	position: relative;
 	width: 100%;
 }
 
