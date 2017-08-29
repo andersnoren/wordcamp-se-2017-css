@@ -2909,6 +2909,9 @@ div.googlemaps iframe {
 }
 
 .wcorg-sponsor {
+	align-items: center;
+	display: flex;
+	justify-content: center;
 	margin: 0;
 	padding: 0 .5rem;
 }
