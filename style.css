@@ -731,6 +731,7 @@ select {
 a {
 	color: #2284D2;
 	transition: all .15s ease;
+	text-decoration: none;
 }
 
 a:focus,a:hover {
@@ -1038,7 +1039,7 @@ pre code {
 	font-size: 15px;
 	font-weight: 500;
 	line-height: 1.25;
-	padding: .7rem 1.4rem .8rem;
+	padding: .75rem 1.4rem .8rem;
 	position: relative;
 	text-align: center;
 	text-decoration: none;
@@ -1584,6 +1585,7 @@ pre code {
 	font-family: henriette, Georgia, serif;
 	font-size: 18px;
 	font-style: italic;
+	text-decoration: none;
 }
 
 .site-info-generator:hover {
