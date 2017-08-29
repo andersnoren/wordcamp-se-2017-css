@@ -4077,6 +4077,10 @@ footer .widget {
 }
 
 @media ( min-width: 47em ) {
+
+	.subscribe-inner {
+		padding: 80px 100px;
+	}
 	
 	.subscribe h3 {
 		font-size: 38px;
