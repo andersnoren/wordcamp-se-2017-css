@@ -1515,12 +1515,33 @@ pre code {
 }
 
 @media (max-width:37.4375em) {
+
+	.sub-menu {
+		background: rgba( 0, 0, 0, .1 );
+		position: relative;
+	}
+	
+	.sub-menu:before {
+		border: 6px solid transparent;
+		border-bottom-color: rgba( 0, 0, 0, 0.1 );
+		content: "";
+		display: block;
+		position: absolute;
+			left: 1rem;
+			bottom: 100%;
+	}
+	
 	.sub-menu a {
 		background: url('https://2017.stockholm.wordcamp.org/files/2017/08/crown-yellow-mini.png') no-repeat 1rem 50%;
 		background-size: 12px auto;
 		padding: .8rem 1rem .8rem 2.5rem;
 		font-size: 16px;
 	}
+	
+	.menu-item a.focus, .menu-item a:active, .menu-item a:focus, .menu-item a:hover {
+		background-color: rgba( 0, 0, 0, .1 );
+	}
+	
 }
 
 @media (min-width:37.5em) {
