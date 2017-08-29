@@ -1566,6 +1566,10 @@ pre code {
 		width: 100%;
 	}
 	
+	.sub-menu .sub-menu .menu-item:first-child {
+		border-top: 1px solid rgba( 255, 255, 255, 0.1 );
+	}
+	
 	.sub-menu a {
 		padding: 1rem;
 		color: #fff;
