@@ -4159,8 +4159,23 @@ footer .widget {
 		padding: 0 20px;
 	}
 	
+	.patriotic-title:before,
+	.patriotic-title:after {
+		border-bottom-width: 11px;
+		border-top-width: 11px;
+		width: 44px;
+	}
+	
 	.patriotic-title span.desktop { display: inline; }
 	.patriotic-title span.mobile { display: none; }
+	
+	.patriotic-title span:before,
+	.patriotic-title span:after {
+		border-width: 11px;
+	}
+	
+	.patriotic-title span:before { left: -44px; }
+	.patriotic-title span:after { right: -44px; }
 }
 
 .social-links {
