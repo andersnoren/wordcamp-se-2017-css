@@ -2881,19 +2881,21 @@ div.googlemaps iframe {
 		content: "";
 		height: 8px;
 		position: absolute;
-			left: 50%;
-			top: 50%;
 		transform: translateX(-50%);
 		width: 100%;
 		z-index: -1;
 	}
 	
 	.wcorg-sponsors>div h2:before {
+		left: 50%;
+		top: 50%;
 		margin-top: -4px;
 	}
 	
 	.wcorg-sponsors>div h2:after {
 		border-color: #fff;
+		bottom: 0;
+		top: 0;
 		left: 50%;
 		margin-left: -8rem;
 		width: 16em;
