@@ -1380,8 +1380,9 @@ pre code {
 }
 
 .main-navigation {
+	padding-top: 2px;
 	position: relative;
-	background-color: rgba(0,0,0,.2);
+	background-color: #2284D2;
 }
 
 .main-navigation:before {
@@ -1395,9 +1396,6 @@ pre code {
 }
 
 @media (max-width:37.4375em) {
-	.main-navigation {
-		background-color: #2284D2;
-	}
 	
 	.main-navigation.toggled-on .menu {
 		display: block;
@@ -1656,6 +1654,20 @@ pre code {
 	position: relative;
 }
 
+@media (min-width:37.5em) {
+	.post {
+		margin-bottom: 5rem;
+		padding-bottom: 5rem;
+	}
+}
+
+@media (min-width:48em) {
+	.post {
+		margin-bottom: 6.25rem;
+		padding-bottom: 6.25rem;
+	}
+}
+
 .post:before,.post:after {
 	content: "";
 	display: block;
@@ -1696,6 +1708,14 @@ pre code {
 	font-size: 2.25em;
 	line-height: 1;
 	margin-bottom: .75rem;
+}
+
+@media (min-width:48em) {
+	
+	.entry-title {
+		font-size: 2.4em;
+	}
+	
 }
 
 .entry-title a {
