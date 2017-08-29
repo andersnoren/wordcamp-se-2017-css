@@ -4111,6 +4111,11 @@ footer .widget {
 
 @media ( min-width: 47em ) {
 
+	.subscribe {
+		margin-bottom: 80px;
+		padding: 100px 0;
+	}
+
 	.subscribe-inner {
 		padding: 80px 100px;
 	}
@@ -4254,7 +4259,7 @@ footer .widget {
 }
 
 .social-links a:hover .fa {
-	transform: scale(1.25) rotate(-5deg);
+	transform: scale(1.25);
 }
 
 @media ( min-width: 47em ) {
