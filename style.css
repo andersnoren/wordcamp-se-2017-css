@@ -667,6 +667,14 @@ hr:after {
 	width: 53px;
 }
 
+@media ( min-width: 47em ) {
+	
+	hr {
+		margin: 3rem 0;
+	}
+	
+}
+
 fieldset {
 	border: none;
 	margin: 0;
