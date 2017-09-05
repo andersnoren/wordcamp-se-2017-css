@@ -1739,6 +1739,10 @@ article.page>*:last-child {
 	margin-bottom: 0;
 }
 
+.page-slug-homepage .entry-header {
+	display: none;
+}
+
 @media (min-width: 47em) {
 	.entry-header {
 		margin-bottom: 2.5rem;
