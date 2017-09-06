@@ -1867,6 +1867,43 @@ article.page>*:last-child {
 	text-decoration: underline;
 }
 
+/* Buy Tickets */
+
+.page-slug-kop-biljetter #main,
+.page-slug-buy-tickets #main {
+	border: 4px solid #ddd;
+	padding: 4px;
+}
+
+.page-slug-kop-biljetter #main > article,
+.page-slug-buy-tickets #main > article {
+	border: 1px solid #ddd;
+	padding: 20px;
+}
+
+@media ( min-width: 47em ) {
+
+	.page-slug-kop-biljetter #main,
+	.page-slug-buy-tickets #main {
+		border: 5px solid #ddd;
+		padding: 6px;
+	}
+	
+	.page-slug-kop-biljetter #main > article,
+	.page-slug-buy-tickets #main > article {
+		border: 2px solid #ddd;
+		padding: 40px;
+	}
+	
+	.page-slug-kop-biljetter #main > article .entry-content p.intro,
+	.page-slug-buy-tickets #main > article .entry-content p.intro {
+		margin: -15px 0 30px;
+	}
+	
+}
+
+/* WordCamp Organizers */
+
 .wcorg-organizers {
 	margin-bottom: 3rem;
 }
