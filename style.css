@@ -635,7 +635,7 @@ h4 {
 
 hr {
 	height: 24px;
-	margin: 1.5rem 0;
+	margin: 2rem 0;
 	padding: 0;
 	position: relative;
 	border: 0;
@@ -1065,6 +1065,11 @@ pre code {
 	.button,button,input[type=button],input[type=reset],input[type=submit] {
 		font-size: 15px;
 		padding: .75rem 1.4rem .8rem;
+	}
+	
+	.button.big, button.big, input[type=button].big, input[type=reset].big, input[type=submit].big {
+		font-size: 17px;
+		padding: .8rem 1.6rem .95rem;
 	}
 
 }
@@ -1811,6 +1816,19 @@ article.page>*:last-child {
 
 .entry-content > *:first-child {
 	margin-top: 0;
+}
+
+.entry-content p.intro {
+	font-size: 1.25em;
+	line-height: 1.4;
+}
+
+@media ( min-width: 47em ) {
+
+	.entry-content p.intro {
+		font-size: 1.4em;
+	}
+
 }
 
 @media(min-width:1024px) {
