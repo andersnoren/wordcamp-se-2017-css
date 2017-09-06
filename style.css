@@ -1887,12 +1887,35 @@ article.page>*:last-child {
 	.page-slug-buy-tickets #main {
 		border: 5px solid #ddd;
 		padding: 6px;
+		position: relative;
 	}
 	
 	.page-slug-kop-biljetter #main > article,
 	.page-slug-buy-tickets #main > article {
 		border: 2px solid #ddd;
-		padding: 40px;
+		padding: 60px 40px 60px 40px;
+		text-align: center;
+	}
+	
+	.page-slug-kop-biljetter .entry-header,
+	.page-slug-buy-tickets .entry-header {
+		margin: 0;
+		position: absolute;
+			top: -11px;
+			left: 50%;
+		transform: translateX(-50%);
+	}
+	
+	.page-slug-kop-biljetter .entry-title,
+	.page-slug-buy-tickets .entry-title {
+		background: #fff;
+		font-size: 1.2em;
+		font-style: italic;
+		font-weight: 500;
+		letter-spacing: .04em;
+		margin: 0 -20px;
+		padding: 0 20px;
+		text-transform: uppercase;
 	}
 	
 	.page-slug-kop-biljetter #main > article .entry-content p.intro,
