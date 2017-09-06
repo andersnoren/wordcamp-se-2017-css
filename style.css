@@ -1827,6 +1827,7 @@ article.page>*:last-child {
 
 	.entry-content p.intro {
 		font-size: 1.4em;
+		margin: -15px 0 40px;
 	}
 
 }
