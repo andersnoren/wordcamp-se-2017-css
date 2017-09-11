@@ -714,7 +714,7 @@ textarea {
 	display: block;
 }
 
-.contact-form textarea {
+.entry-content .contact-form textarea {
 	width: 100%;
 }
 
