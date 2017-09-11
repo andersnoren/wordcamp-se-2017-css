@@ -2457,6 +2457,7 @@ div.googlemaps iframe {
 
 .wcpt-schedule .wcpt-session-speakers {
 	display: block;
+	line-height: 1.25;
 }
 
 .wcpt-session-type-session:before {
@@ -2569,7 +2570,22 @@ span.wcpt-session-speakers:before {
 	}
 }
 
+@media ( min-width: 1000px ) {
 
+	.wcpt-schedule {
+		margin-left: -100px;
+		width: 904px;
+	}
+
+	.wcpt-schedule td, .wcpt-schedule th {
+		padding: 1.5em;
+	}
+
+	.wcpt-schedule .wcpt-session-speakers {
+		margin-top: 3px;
+	}
+
+}
 
 .wcorg-session {
 	border-top: 6px double #f5ebe0;
