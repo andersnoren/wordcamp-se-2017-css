@@ -2404,11 +2404,12 @@ div.googlemaps iframe {
 		left: -8px;
 		right: -8px;
 		top: -8px;
+	z-index: -1;
 }
 
 .wcpt-schedule td,.wcpt-schedule th {
-	vertical-align: top;
-	border-color: #e0c2a3;
+	vertical-align: baseline;	
+	border-color: #ddd;
 }
 
 .wcpt-schedule .wcpt-col-time,
@@ -2442,10 +2443,10 @@ div.googlemaps iframe {
 .wcpt-schedule .wcpt-session-title {
 	display: block;
 	font-family: henriette, Georgia, serif;
-	margin-bottom: .5rem;
 	font-size: 1.25em;
+	font-weight: 500;
 	line-height: 1.25em;
-	font-weight: 700;
+	margin: 0;
 }
 
 .wcpt-schedule .global-session.afternoon-break .wcpt-session-title,.wcpt-schedule .global-session.break .wcpt-session-title,.wcpt-schedule .global-session.lunch .wcpt-session-title,.wcpt-schedule .global-session.morning-break .wcpt-session-title,.wcpt-schedule .global-session.registration .wcpt-session-title {
@@ -2457,8 +2458,21 @@ div.googlemaps iframe {
 	display: block;
 }
 
+.wcpt-session-type-session:before {
+	border: none;
+	font-size: 12px;
+	font-weight: 700;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+span.wcpt-session-speakers:before {
+	color: #242424;
+	font-style: normal;
+}
+
 .wcpt-schedule .wcpt-session-speakers a {
-	color: rgba(29,36,42,.75);
+	color: #242424;
 }
 
 .wcpt-schedule .global-session.afternoon-break,.wcpt-schedule .global-session.break,.wcpt-schedule .global-session.lunch,.wcpt-schedule .global-session.morning-break,.wcpt-schedule .global-session.registration {
@@ -2474,6 +2488,14 @@ div.googlemaps iframe {
 		display: block;
 		border-top: none;
 		margin: 0;
+	}
+
+	.wcpt-schedule td {
+		padding: 1.25em;
+	}
+
+	.wcpt-schedule td + td {
+		border-top: 1px solid #ddd;
 	}
 	
 	.wcpt-schedule thead {
@@ -2521,8 +2543,8 @@ div.googlemaps iframe {
 	.wcpt-schedule .wcpt-time {
 		padding-top: 1rem;
 		padding-bottom: 1rem;
-		color: hsla(0,0%,100%,.9);
-		background-color: #2d282d;
+		color: #fff;
+		background-color: #242424;
 	}
 	
 	.wcpt-schedule .wcpt-session-title {
