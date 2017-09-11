@@ -2581,6 +2581,11 @@ span.wcpt-session-speakers:before {
 		padding: 1.5em;
 	}
 
+	.wcpt-schedule .wcpt-session-title {
+		font-size: 1.4em;
+		line-height: 1.225em;		
+	}
+
 	.wcpt-schedule .wcpt-session-speakers {
 		margin-top: 3px;
 	}
