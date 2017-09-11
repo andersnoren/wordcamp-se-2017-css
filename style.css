@@ -2389,9 +2389,21 @@ div.googlemaps iframe {
 }
 
 .wcpt-schedule {
-	border: .25rem solid #c96;
-	margin-bottom: 1.5rem;
 	background-color: #fff;
+	border: 1px solid #ddd;
+	margin-bottom: 1.5rem;
+	position: relative;
+}
+
+.wcpt-schedule:before {
+	border: 3px solid #ddd;
+	content: "";
+	display: block;
+	position: absolute;
+		bottom: -8px;
+		left: -8px;
+		right: -8px;
+		top: -8px;
 }
 
 .wcpt-schedule td,.wcpt-schedule th {
@@ -2399,10 +2411,14 @@ div.googlemaps iframe {
 	border-color: #e0c2a3;
 }
 
-.wcpt-schedule .wcpt-col-time,.wcpt-schedule .wcpt-col-track {
+.wcpt-schedule .wcpt-col-time,
+.wcpt-schedule .wcpt-col-track {
+	background: #fff;
 	border-top: none;
-	background-color: #2d282d;
-	color: hsla(0,0%,100%,.9);
+	color: #848484;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
 }
 
 .wcpt-schedule .global-session td {
@@ -2418,15 +2434,14 @@ div.googlemaps iframe {
 }
 
 .wcpt-schedule .wcpt-time {
-	font-size: 1em;
-	line-height: 1.25em;
-	font-weight: 700;
-	font-family: aktiv-grotesk, Helvetica Neue, Helvetica, sans-serif;
-	color: rgba(29,36,42,.9);
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 400;
 }
 
 .wcpt-schedule .wcpt-session-title {
 	display: block;
+	font-family: henriette, Georgia, serif;
 	margin-bottom: .5rem;
 	font-size: 1.25em;
 	line-height: 1.25em;
@@ -2435,11 +2450,7 @@ div.googlemaps iframe {
 
 .wcpt-schedule .global-session.afternoon-break .wcpt-session-title,.wcpt-schedule .global-session.break .wcpt-session-title,.wcpt-schedule .global-session.lunch .wcpt-session-title,.wcpt-schedule .global-session.morning-break .wcpt-session-title,.wcpt-schedule .global-session.registration .wcpt-session-title {
 	margin-bottom: 0;
-	font-size: 1.5625em;
-	line-height: 1.25em;
 	font-family: henriette, Georgia, serif;
-	text-transform: uppercase;
-	color: rgba(29,36,42,.9);
 }
 
 .wcpt-schedule .wcpt-session-speakers {
@@ -2451,10 +2462,7 @@ div.googlemaps iframe {
 }
 
 .wcpt-schedule .global-session.afternoon-break,.wcpt-schedule .global-session.break,.wcpt-schedule .global-session.lunch,.wcpt-schedule .global-session.morning-break,.wcpt-schedule .global-session.registration {
-	background-image: url('https://2017.europe.wordcamp.org/files/2017/01/background-pattern-01.png');
-	background-color: #f5ebe0 !important;
-	background-size: 120px;
-	background-position: 50% 0;
+
 }
 
 @media (max-width:47.9375em) {
@@ -2475,7 +2483,7 @@ div.googlemaps iframe {
 	.wcpt-schedule tr {
 		margin-bottom: 1rem;
 		display: block;
-		border: .25rem solid #c96;
+		border: 1px solid #ddd;
 	}
 	
 	.wcpt-schedule .wcb-track-track-1:before,.wcpt-schedule .wcb-track-track-2:before,.wcpt-schedule .wcb-track-track-3:before {
