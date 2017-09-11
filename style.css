@@ -1058,10 +1058,10 @@ pre code {
 	cursor: pointer;
 	display: inline-block;
 	font-family: aktiv-grotesk, Helvetica Neue, Helvetica, sans-serif;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: 500;
 	line-height: 1.25;
-	padding: .5rem 1.1rem .65rem;
+	padding: .75rem 1.3rem .85rem;
 	position: relative;
 	text-align: center;
 	text-decoration: none;
@@ -1915,8 +1915,8 @@ article.page>*:last-child {
 	.page-slug-buy-tickets .entry-header {
 		margin: 0;
 		position: absolute;
-			top: -11px;
 			left: 50%;
+			top: -10px;
 		transform: translateX(-50%);
 	}
 	
@@ -1924,7 +1924,6 @@ article.page>*:last-child {
 	.page-slug-buy-tickets .entry-title {
 		background: #fff;
 		font-size: 1.2em;
-		font-style: italic;
 		font-weight: 500;
 		letter-spacing: .04em;
 		margin: 0 -20px;
@@ -3962,7 +3961,7 @@ footer .widget {
 }
 
 .subscribe p {
-	font-size: 15px;
+	font-size: 16px;
 	line-height: 1.46;
 	margin: 17px auto 0 auto;
 	max-width: 400px;
