@@ -759,7 +759,15 @@ a:active {
 p {
 	font-size: 1em;
 	line-height: 1.5;
-	margin: 0 0 1.5rem 0;
+	margin: 0 0 1rem;
+}
+
+@media ( min-width: 32em ) {
+
+	p {
+		margin: 0 0 1.5rem;
+	}
+
 }
 
 strong {
