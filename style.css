@@ -2577,8 +2577,12 @@ span.wcpt-session-speakers:before {
 		width: 904px;
 	}
 
-	.wcpt-schedule td, .wcpt-schedule th {
-		padding: 1.5em;
+	.wcpt-schedule td {
+		padding: 25px 20px;
+	}
+
+	.wcpt-schedule th {
+		padding: 20px;
 	}
 
 	.wcpt-schedule .wcpt-session-title {
@@ -2595,10 +2599,6 @@ span.wcpt-session-speakers:before {
 .wcorg-session {
 	border-top: 6px double #f5ebe0;
 	padding: 1.5rem 0;
-}
-
-.wcorg-session .wcorg-session-description {
-
 }
 
 .wcorg-session .wcorg-session-description:after,.wcorg-session .wcorg-session-description:before {
