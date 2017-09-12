@@ -1899,6 +1899,10 @@ article.page>*:last-child {
 	margin-top: 40px;
 }
 
+.boxed h1 {
+	margin-top: 0;
+}
+
 .boxed p:last-child { 
 	margin-bottom: 0; 
 }
@@ -1940,7 +1944,7 @@ article.page>*:last-child {
 		padding: 0 20px;
 		position: absolute;
 			left: 50%;
-			top: -10px;
+			top: -18px;
 		text-transform: uppercase;
 		transform: translateX(-50%);
 	}
