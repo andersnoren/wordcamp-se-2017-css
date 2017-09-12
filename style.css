@@ -1972,8 +1972,10 @@ article.page>*:last-child {
 	margin: 0 0 5px;
 }
 
-.wcorg-organizer h3,
-.wcorg-speaker h3 {
+.wcorg-organizer .wcorg-speaker-description p:first-of-type,
+.wcorg-speaker .wcorg-speaker-descriptio p:first-of-type,
+.wcorg-organizer .wcorg-speaker-description h3:first-of-type,
+.wcorg-speaker .wcorg-speaker-descriptio h3:first-of-type {
 	font-family: aktiv-grotesk, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 400;
@@ -1992,10 +1994,20 @@ article.page>*:last-child {
 	border-radius: 3px;
 	color: #2284D2;
 	display: inline-block;
-	font-size: 15px;
 	font-weight: 500;
 	padding: 7px 15px 9px;
 	transition: background-color .15s linear, color .15s linear;
+}
+
+.wcorg-organizer .more-link span,
+.wcorg-speaker .more-link span {
+	font-size: 0;
+}
+
+.wcorg-organizer .more-link span:after,
+.wcorg-speaker .more-link span:after {
+	content: "Read More";
+	font-size: 15px;
 }
 
 .wcorg-organizer .more-link:hover,
