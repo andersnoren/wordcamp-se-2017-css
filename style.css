@@ -1995,7 +1995,8 @@ article.page>*:last-child {
 	color: #2284D2;
 	display: inline-block;
 	font-weight: 500;
-	padding: 8px 15px 9px;
+	line-height: 1;
+	padding: 10px 16px 12px;
 	transition: background-color .15s linear, color .15s linear;
 }
 
@@ -2038,9 +2039,19 @@ article.page>*:last-child {
 }
 
 @media ( min-width: 50rem ) {
+	.wcorg-organizers,
+	.wcorg-speakers {
+		margin-top: 40px;
+	}
+
 	.wcorg-organizer,
 	.wcorg-speaker {
 		width: 33.3%;
+	}
+
+	.wcorg-organizer .more-link,
+	.wcorg-speaker .more-link {
+		padding: 8px 16px 12px;
 	}
 }
 
