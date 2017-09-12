@@ -1943,6 +1943,12 @@ article.page>*:last-child {
 .wcorg-organizers,
 .wcorg-speakers {
 	display: flex;
+	flex-wrap: wrap;
+}
+
+.wcorg-organizer,
+.wcorg-speaker {
+	margin: 1rem;
 }
 
 @media ( min-width: 60rem ) {
@@ -1950,8 +1956,18 @@ article.page>*:last-child {
 	.wcorg-organizers,
 	.wcorg-speakers {
 		position: relative;
-			left: calc( 50% - 50vw - 2.5rem );
-		width: calc( 100vw - 5rem );
+			left: calc(50% - 50vw + 2.5rem);
+		width: calc(100vw - 5rem);
+	}
+
+}
+
+@media ( min-width: 1440px ) {
+
+	.wcorg-organizers,
+	.wcorg-speakers {
+		left: calc(50% - 680px);
+		width: 1360px;
 	}
 
 }
@@ -2607,51 +2623,6 @@ span.wcpt-session-speakers:before {
 
 .wcorg-session h3 {
 	text-transform: none;
-}
-
-.wcorg-speaker {
-	border-top: 2px solid #eee;
-	margin-top: 1.5rem;
-	padding: 1.5rem 0;
-}
-
-.wcorg-speaker > h2 {
-	margin: 0 0 1.4rem;
-}
-
-.wcorg-speaker .wcorg-speaker-description:after,.wcorg-speaker .wcorg-speaker-description:before {
-	content: "";
-	display: table;
-}
-
-.wcorg-speaker .wcorg-speaker-description:after {
-	clear: both;
-}
-
-.wcorg-speaker .avatar {
-	float: left;
-	margin: 0 1rem .5rem 0;
-}
-
-.wcorg-speaker-description .avatar + h3 {
-	margin-top: 0;
-}
-
-.wcorg-speaker p {
-	margin-bottom: .5rem;
-	font-size: 16px;
-}
-
-.wcorg-speaker p:last-child {
-	margin-bottom: 0;
-}
-
-.wcorg-speaker h3 {
-	text-transform: none;
-}
-
-.single-wcb_speaker .entry-content {
-	font-size: 18px;
 }
 
 #session-speaker-names,#speaker-session-names {
