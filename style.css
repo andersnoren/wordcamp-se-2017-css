@@ -1899,7 +1899,9 @@ article.page>*:last-child {
 	margin-top: 40px;
 }
 
-.boxed h1 {
+.boxed h1,
+.boxed h2,
+.boxed h3 {
 	margin-top: 0;
 }
 
@@ -1935,7 +1937,9 @@ article.page>*:last-child {
 		top: -13px;
 	}
 	
-	.boxed h1 {
+	.boxed h1,
+	.boxed h2,
+	.boxed h3 {
 		background: #fff;
 		font-size: 1.2em;
 		font-weight: 500;
