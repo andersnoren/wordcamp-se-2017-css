@@ -1991,7 +1991,7 @@ article.page>*:last-child {
 .wcorg-organizer .more-link,
 .wcorg-speaker .more-link {
 	border: 1px solid #2284D2;
-	border-radius: 3px;
+	border-radius: 4px;
 	color: #2284D2;
 	display: inline-block;
 	font-weight: 500;
