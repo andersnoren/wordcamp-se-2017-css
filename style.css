@@ -1886,8 +1886,16 @@ article.page>*:last-child {
 .boxed {
 	border: 1px solid #ddd;
 	display: block;
+	margin: 40px 0;
 	padding: 20px;
 	position: relative;
+}
+
+.boxed:first-child { margin-top: 0; }
+.boxed:last-child { margin-bottom: 0; }
+
+.boxed + .boxed {
+	margin-top: 40px;
 }
 
 .boxed:before {
@@ -1895,10 +1903,10 @@ article.page>*:last-child {
 	content: "";
 	display: block;
 	position: absolute;
-		bottom: -5px;
-		left: -5px;
-		right: -5px;
-		top: -5px;
+		bottom: -8px;
+		left: -8px;
+		right: -8px;
+		top: -8px;
 	z-index: -1;
 }
 
@@ -1912,10 +1920,10 @@ article.page>*:last-child {
 
 	.boxed:before {
 		border: 5px solid #ddd;
-		bottom: -8px;
-		left: -8px;
-		right: -8px;
-		top: -8px;
+		bottom: -13px;
+		left: -13px;
+		right: -13px;
+		top: -13px;
 	}
 	
 	.boxed h1 {
