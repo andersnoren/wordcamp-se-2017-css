@@ -1886,7 +1886,8 @@ article.page>*:last-child {
 .boxed {
 	border: 1px solid #ddd;
 	display: block;
-	margin: 40px 0;
+	margin: 40px auto;
+	max-width: 680px;
 	padding: 20px;
 	position: relative;
 }
@@ -1896,6 +1897,10 @@ article.page>*:last-child {
 
 .boxed + .boxed {
 	margin-top: 40px;
+}
+
+.boxed p:last-child { 
+	margin-bottom: 0; 
 }
 
 .boxed:before {
