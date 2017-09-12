@@ -1948,26 +1948,49 @@ article.page>*:last-child {
 
 .wcorg-organizer,
 .wcorg-speaker {
-	margin: 1rem;
-	padding-top: 7.5rem;
+	padding: 80px 10px 20px;
 	position: relative;
 	text-align: center;
-	width: 50%;
-}
-
-.wcorg-organizer h2,
-.wcorg-speaker h2 {
-	margin: 0 0 15px 0;
+	width: 100%;
 }
 
 .wcorg-organizer .avatar,
 .wcorg-speaker .avatar {
+	border-radius: 50%;
 	margin: 0;
 	position: absolute;
 		left: calc( 50% - 30px );
 		top: 0;
 	width: 60px;
 }
+
+.wcorg-organizer h2,
+.wcorg-speaker h2 {
+	font-size: 26px;
+	margin: 0 0 5px;
+}
+
+.wcorg-organizer h3,
+.wcorg-speaker h3 {
+	margin: 0;
+}
+
+.wcorg-organizer p,
+.wcorg-speaker p {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.wcorg-organizer .more-link,
+.wcorg-speaker .more-link {
+	border: 1px solid #2284D2;
+	color: #2284D2;
+	display: inline-block;
+	font-weight: 500;
+	padding: 10xp 15px;
+}
+
+
 
 @media ( min-width: 60rem ) {
 
