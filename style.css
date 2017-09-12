@@ -1948,7 +1948,7 @@ article.page>*:last-child {
 
 .wcorg-organizer,
 .wcorg-speaker {
-	padding: 80px 10px 20px;
+	padding: 80px 10px 30px;
 	position: relative;
 	text-align: center;
 	width: 100%;
@@ -1975,23 +1975,23 @@ article.page>*:last-child {
 	font-family: aktiv-grotesk, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 400;
+	letter-spacing: 0;
 	margin: 0;
 }
 
 .wcorg-organizer p,
 .wcorg-speaker p {
-	margin: 10px 0 0;
-	text-align: center;
+	margin: 20px 0 0;
 }
 
 .wcorg-organizer .more-link,
 .wcorg-speaker .more-link {
 	border: 1px solid #2284D2;
-	border-radius: 2px;
+	border-radius: 3px;
 	color: #2284D2;
 	display: inline-block;
 	font-weight: 500;
-	padding: 10px 15px;
+	padding: 7px 15px 9px;
 	transition: background-color .15s linear, color .15s linear;
 }
 
@@ -1999,6 +1999,29 @@ article.page>*:last-child {
 .wcorg-speaker .more-link:hover {
 	background: #2284D2;
 	color: #fff;
+	text-decoration: none;
+}
+
+
+@media ( min-width: 32rem ) {
+	.wcorg-organizer,
+	.wcorg-speaker {
+		width: 50%;
+	}
+}
+
+@media ( min-width: 64rem ) {
+	.wcorg-organizer,
+	.wcorg-speaker {
+		width: 33.3%;
+	}
+}
+
+@media ( min-width: 96rem ) {
+	.wcorg-organizer,
+	.wcorg-speaker {
+		width: 25%;
+	}
 }
 
 
