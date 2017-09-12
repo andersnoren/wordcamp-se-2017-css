@@ -1887,6 +1887,7 @@ article.page>*:last-child {
 	border: 1px solid #ddd;
 	display: block;
 	padding: 20px;
+	position: relative;
 }
 
 .boxed:before {
