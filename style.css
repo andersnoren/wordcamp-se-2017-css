@@ -1883,56 +1883,55 @@ article.page>*:last-child {
 
 /* Buy Tickets */
 
-.page-slug-kop-biljetter #main,
-.page-slug-buy-tickets #main {
-	border: 4px solid #ddd;
-	padding: 4px;
+.boxed {
+	border: 1px solid #ddd;
+	display: block;
+	padding: 20px;
 }
 
-.page-slug-kop-biljetter #main > article,
-.page-slug-buy-tickets #main > article {
-	border: 1px solid #ddd;
-	padding: 20px;
+.boxed:before {
+	border: 4px solid #ddd;
+	content: "";
+	display: block;
+	position: absolute;
+		bottom: -5px;
+		left: -5px;
+		right: -5px;
+		top: -5px;
+	z-index: -1;
 }
 
 @media ( min-width: 47em ) {
 
-	.page-slug-kop-biljetter #main,
-	.page-slug-buy-tickets #main {
-		border: 5px solid #ddd;
-		padding: 6px;
-		position: relative;
-	}
-	
-	.page-slug-kop-biljetter #main > article,
-	.page-slug-buy-tickets #main > article {
+	.boxed {
 		border: 2px solid #ddd;
 		padding: 60px 40px 50px 40px;
 		text-align: center;
 	}
-	
-	.page-slug-kop-biljetter .entry-header,
-	.page-slug-buy-tickets .entry-header {
-		margin: 0;
-		position: absolute;
-			left: 50%;
-			top: -10px;
-		transform: translateX(-50%);
+
+	.boxed:before {
+		border: 5px solid #ddd;
+		bottom: -8px;
+		left: -8px;
+		right: -8px;
+		top: -8px;
 	}
 	
-	.page-slug-kop-biljetter .entry-title,
-	.page-slug-buy-tickets .entry-title {
+	.boxed h1 {
 		background: #fff;
 		font-size: 1.2em;
 		font-weight: 500;
 		letter-spacing: .04em;
 		margin: 0 -20px;
 		padding: 0 20px;
+		position: absolute;
+			left: 50%;
+			top: -10px;
 		text-transform: uppercase;
+		transform: translateX(-50%);
 	}
 	
-	.page-slug-kop-biljetter #main > article .entry-content p.intro,
-	.page-slug-buy-tickets #main > article .entry-content p.intro {
+	.boxed p.intro {
 		margin: -15px 0 30px;
 	}
 	
