@@ -2066,9 +2066,22 @@ article.page>*:last-child {
 }
 
 @media ( min-width: 70rem ) {
+
+	.wcorg-organizers,
+	.wcorg-speakers {
+		margin-top: 50px;
+	}
+
 	.wcorg-organizer,
 	.wcorg-speaker {
+		padding: 110px 10px 50px;
 		width: 25%;
+	}
+	
+	.wcorg-organizer .avatar,
+	.wcorg-speaker .avatar {
+		left: calc( 50% - 45px );
+		width: 90px;
 	}
 }
 
