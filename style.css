@@ -1944,6 +1944,8 @@ article.page>*:last-child {
 .wcorg-speakers {
 	display: flex;
 	flex-wrap: wrap;
+	margin: 0 -10px;
+	position: relative;
 }
 
 .wcorg-organizer,
@@ -1990,7 +1992,7 @@ article.page>*:last-child {
 	border-radius: 3px;
 	color: #2284D2;
 	display: inline-block;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: 500;
 	padding: 7px 15px 9px;
 	transition: background-color .15s linear, color .15s linear;
@@ -2003,11 +2005,17 @@ article.page>*:last-child {
 	text-decoration: none;
 }
 
+@media ( min-width: 23rem ) {
+	.wcorg-organizer,
+	.wcorg-speaker {
+		width: 50%;
+	}
+}
+
 @media ( min-width: 30rem ) {
 	.wcorg-organizer,
 	.wcorg-speaker {
 		padding: 100px 10px 40px;
-		width: 50%;
 	}
 
 	.wcorg-organizer .avatar,
@@ -2024,6 +2032,16 @@ article.page>*:last-child {
 	}
 }
 
+@media ( min-width: 60rem ) {
+	
+	.wcorg-organizers,
+	.wcorg-speakers {
+		left: calc(50% - 50vw + 2.5rem);
+		width: calc(100vw - 5rem);
+	}
+
+}
+
 @media ( min-width: 70rem ) {
 	.wcorg-organizer,
 	.wcorg-speaker {
@@ -2031,27 +2049,12 @@ article.page>*:last-child {
 	}
 }
 
-
-
-@media ( min-width: 60rem ) {
-
+@media ( min-width: 1260px ) {
 	.wcorg-organizers,
 	.wcorg-speakers {
-		position: relative;
-			left: calc(50% - 50vw + 2.5rem);
-		width: calc(100vw - 5rem);
+		left: calc(50% - 590px);
+		width: 1180px;
 	}
-
-}
-
-@media ( min-width: 1440px ) {
-
-	.wcorg-organizers,
-	.wcorg-speakers {
-		left: calc(50% - 680px);
-		width: 1360px;
-	}
-
 }
 
 /* WordCamp Organizers End */
