@@ -1938,56 +1938,25 @@ article.page>*:last-child {
 	
 }
 
-/* WordCamp Organizers */
+/* WordCamp Organizers & Speakers */
 
-.wcorg-organizers {
-	margin-bottom: 3rem;
+.wcorg-organizers,
+.wcorg-speakers {
+	display: flex;
 }
 
-.wcorg-organizer {
-	max-width: 40em;
-	margin-bottom: 2rem;
-}
+@media ( min-width: 60rem ) {
 
-.wcorg-organizer:last-child {
-	margin-bottom: 0;
-}
-
-.wcorg-organizer h2 {
-	margin-bottom: 1rem;
-	font-size: 1.25em;
-	font-family: henriette, Georgia, serif;
-}
-
-.wcorg-organizer .wcorg-organizer-description {
-	padding-left: 4rem;
-	min-height: 3rem;
-}
-
-@media (min-width:37.5em) {
-	.wcorg-organizer .wcorg-organizer-description {
-		padding-left: 6rem;
-		min-height: 5rem;
+	.wcorg-organizers,
+	.wcorg-speakers {
+		position: relative;
+			left: calc( 50% - 50vw - 2.5rem );
+		width: calc( 100vw - 5rem );
 	}
+
 }
 
-.wcorg-organizer p {
-	margin: 0;
-	font-size: 16px;
-}
-
-.wcorg-organizer .avatar {
-	float: left;
-	margin-left: -4rem;
-	width: 3rem;
-}
-
-@media (min-width:37.5em) {
-	.wcorg-organizer .avatar {
-		margin-left: -6rem;
-		width: 5rem;
-	}
-}
+/* WordCamp Organizers End */
 
 .tix-attendee-list {
 	list-style: none;
