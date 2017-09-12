@@ -1949,6 +1949,24 @@ article.page>*:last-child {
 .wcorg-organizer,
 .wcorg-speaker {
 	margin: 1rem;
+	padding-top: 7.5rem;
+	position: relative;
+	text-align: center;
+	width: 50%;
+}
+
+.wcorg-organizer h2,
+.wcorg-speaker h2 {
+	margin: 0 0 15px 0;
+}
+
+.wcorg-organizer .avatar,
+.wcorg-speaker .avatar {
+	margin: 0;
+	position: absolute;
+		left: calc( 50% - 30px );
+		top: 0;
+	width: 60px;
 }
 
 @media ( min-width: 60rem ) {
