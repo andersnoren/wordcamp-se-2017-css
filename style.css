@@ -1972,22 +1972,33 @@ article.page>*:last-child {
 
 .wcorg-organizer h3,
 .wcorg-speaker h3 {
+	font-family: aktiv-grotesk, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
 	margin: 0;
 }
 
 .wcorg-organizer p,
 .wcorg-speaker p {
-	margin-top: 10px;
+	margin: 10px 0 0;
 	text-align: center;
 }
 
 .wcorg-organizer .more-link,
 .wcorg-speaker .more-link {
 	border: 1px solid #2284D2;
+	border-radius: 2px;
 	color: #2284D2;
 	display: inline-block;
 	font-weight: 500;
-	padding: 10xp 15px;
+	padding: 10px 15px;
+	transition: background-color .15s linear, color .15s linear;
+}
+
+.wcorg-organizer .more-link:hover,
+.wcorg-speaker .more-link:hover {
+	background: #2284D2;
+	color: #fff;
 }
 
 
