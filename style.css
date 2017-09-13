@@ -1959,13 +1959,8 @@ article.page>*:last-child {
 	
 }
 
-
+.boxed--gold, 
 .boxed--gold:before {
-	border-color: #ffd700;
-}
-
-.boxed--gold {
-	background: #ffd700;
 	border-color: #ffd700;
 }
 
