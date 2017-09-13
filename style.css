@@ -1892,10 +1892,6 @@ article.page>*:last-child {
 	position: relative;
 }
 
-.boxed--gold {
-	border-color: #ffd700;
-}
-
 .boxed:first-child { margin-top: 0; }
 .boxed:last-child { margin-bottom: 0; }
 
@@ -1923,10 +1919,6 @@ article.page>*:last-child {
 		right: -8px;
 		top: -8px;
 	z-index: -1;
-}
-
-.boxed--gold:before {
-	border-color: #ffd700;
 }
 
 @media ( min-width: 47em ) {
@@ -1965,6 +1957,15 @@ article.page>*:last-child {
 		margin: -15px 0 30px;
 	}
 	
+}
+
+
+.boxed--gold:before {
+	border-color: #ffd700;
+}
+
+.boxed--gold {
+	border-color: #ffd700;
 }
 
 /* WordCamp Organizers & Speakers */
