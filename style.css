@@ -1965,6 +1965,7 @@ article.page>*:last-child {
 }
 
 .boxed--gold {
+	background: #ffd700;
 	border-color: #ffd700;
 }
 
