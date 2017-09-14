@@ -1101,7 +1101,7 @@ pre code {
 .site-header .site-branding {
 	position: relative;
 	overflow: hidden;
-	padding: 2.5rem 1rem;
+	padding: 2rem 1rem;
 	text-align: center;
 	z-index: 10;
 }
@@ -1119,7 +1119,7 @@ pre code {
 }
 
 .home .site-header .site-branding {
-	padding: 3.5rem 1rem;
+	padding: 2rem 1rem;
 }
 
 @media (min-width:37.5em) {
@@ -1136,59 +1136,42 @@ pre code {
 
 .site-title {
 	margin: 0;
-	font-size: 1.5625em;
 	line-height: 1;
-	font-family: henriette, Georgia, serif;
-	font-weight: 500;
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-	color: #fff;
-}
-
-@media(min-width:47em) {
-	.site-title {
-		font-size: 1.8em;
-	}
 }
 
 .site-title a {
+	color: transparent;
 	display: block;
-	color: #fff;
+	font-size: 0;
+	text-shadow: none;
 }
 
 .site-title a:active,.site-title a:focus,.site-title a:hover {
-	color: #fff;
+	color: transparent;
 	text-decoration: none;
 }
 
 .site-title a:before {
 	display: block;
-	width: 100px;
-	height: 100px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 1.5rem;
-	background: url('https://2017.stockholm.wordcamp.org/files/2017/08/wc-stockholm-logo.png') no-repeat center;
+	width: 179px;
+	height: 200px;
+	margin: 0 auto;
+	background: url('https://2017.stockholm.wordcamp.org/files/2017/09/wordcamp-stockholm-colour-1.png') no-repeat center;
 	background-size: contain;
 	content: "";
 }
 
-@media (min-width:47em) {
+@media ( min-width: 37.5em ) {
+
 	.site-title a:before {
-		height: 161px;
-		width: 114px;
+		height: 320px;
+		width: 287px;
 	}
+
 }
 
 .site-description {
-	margin: 0;
-	margin-top: .5rem;
-	font-size: 1em;
-	line-height: 1.25em;
-	font-family: aktiv-grotesk, Helvetica Neue, Helvetica, sans-serif;
-	font-weight: 400;
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
-	text-transform: none;
-	color: #fff;
+	display: none;
 }
 
 .site-header>* {
