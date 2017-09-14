@@ -1128,11 +1128,6 @@ pre code {
 	}
 }
 
-@media (min-width:47em) {
-	.home .site-header .site-branding {
-		padding: 9rem 3rem;
-	}
-}
 
 .site-title {
 	margin: 0;
@@ -1166,6 +1161,15 @@ pre code {
 	.site-title a:before {
 		height: 320px;
 		width: 287px;
+	}
+
+}
+
+@media (min-width:47em) {
+
+	.home .site-title a:before {
+		height: 400px;
+		width: 358px;
 	}
 
 }
