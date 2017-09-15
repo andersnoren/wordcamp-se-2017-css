@@ -4088,7 +4088,7 @@ footer .widget {
 .patriotic-title {
 	align-items: center;
 	display: flex;
-	font-size: 28px;
+	font-size: 26px;
 	line-height: 1;
 	justify-content: center;
 	text-align: center;
@@ -4106,7 +4106,7 @@ footer .widget {
 
 .patriotic-title span {
 	background: #fff;
-	padding: 0 15px;
+	padding: 0 14px;
 	position: relative;
 }
 
@@ -4134,7 +4134,7 @@ footer .widget {
 	display: none;
 }
 
-@media ( min-width: 32em ) {
+@media ( min-width: 40em ) {
 
 	.patriotic-title {
 		font-size: 32px;
